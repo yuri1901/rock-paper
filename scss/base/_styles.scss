@@ -1,0 +1,19 @@
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  max-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  background: $bg-gradient;
+
+  position: relative;
+
+  padding: 20px;
+  @include mediaMobile {
+    gap: 105px;
+  }
+}

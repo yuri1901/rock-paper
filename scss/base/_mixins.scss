@@ -1,0 +1,15 @@
+@mixin mediaTablet-rulse {
+  @media screen and (max-width: $tablet-rules) {
+    @content;
+  }
+}
+@mixin mediaTablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+@mixin mediaMobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
