@@ -21,7 +21,7 @@
   background-color: white;
 
   @include mediaTablet-rulse {
-    width: 100vw;
+    width: 100dvh;
     height: 100vh;
   }
 }
@@ -53,6 +53,9 @@
   }
   @include mediaTablet-rulse {
     grid-template-rows: repeat(3, 1fr);
+  }
+  @include mediaMobile {
+    height: 50%;
   }
 }
 .modalWindow__rules {
