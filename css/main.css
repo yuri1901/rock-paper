@@ -276,6 +276,7 @@ body {
 }
 @media screen and (max-width: 510px) {
   .modalWindow__content {
+    background-color: red;
     height: 50%;
   }
 }

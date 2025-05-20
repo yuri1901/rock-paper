@@ -55,6 +55,7 @@
     grid-template-rows: repeat(3, 1fr);
   }
   @include mediaMobile {
+    background-color: red;
     height: 50%;
   }
 }
