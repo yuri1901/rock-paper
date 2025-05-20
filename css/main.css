@@ -125,7 +125,7 @@ body {
 }
 @media screen and (max-width: 510px) {
   body {
-    min-height: 100dvh;
+    min-height: 100svh;
     gap: 105px;
   }
 }
