@@ -26,6 +26,7 @@
   }
   @include mediaMobile {
     height: 100dvh;
+    background-color: violet;
   }
 }
 .modalWindow__content {

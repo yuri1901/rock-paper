@@ -241,6 +241,7 @@ body {
 @media screen and (max-width: 510px) {
   .modalWindow__inner {
     height: 100dvh;
+    background-color: violet;
   }
 }
 
