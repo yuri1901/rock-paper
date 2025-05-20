@@ -234,8 +234,13 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .modalWindow__inner {
-    width: 100dvh;
+    width: 100vh;
     height: 100vh;
+  }
+}
+@media screen and (max-width: 510px) {
+  .modalWindow__inner {
+    height: 100dvh;
   }
 }
 
@@ -273,12 +278,6 @@ body {
 @media screen and (max-width: 1024px) {
   .modalWindow__content {
     grid-template-rows: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 510px) {
-  .modalWindow__content {
-    background-color: red;
-    height: 50%;
   }
 }
 
