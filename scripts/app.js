@@ -3,15 +3,26 @@ const btnModalClose = document.querySelector(".btn__rules-close");
 const modalElement = document.querySelector(".modalWindow");
 
 btnModalOpen.addEventListener("click", () => {
-  if (modalElement.classList.contains("modalClose")) {
-    modalElement.classList.remove("modalClose");
-    modalElement.classList.add("modalOpen");
-  }
+  modalElement.classList.replace("modalClose", "modalOpen");
 });
 
 btnModalClose.addEventListener("click", () => {
-  if (modalElement.classList.contains("modalOpen")) {
-    modalElement.classList.remove("modalOpen");
-    modalElement.classList.add("modalClose");
-  }
+  modalElement.classList.replace("modalOpen", "modalClose");
+});
+
+const btnsGameElement = document.querySelectorAll(".game > button");
+
+const setAnimation = (btn, name) => {
+  btn.setAttribute("style", `animation: ${name} 0.5s ease forwards;`);
+};
+
+btnsGameElement.forEach((item) => {
+  item.addEventListener("mouseenter", (e) => {
+    const button = e.target.closest("button");
+    return setAnimation(button, "hoverCircle");
+  });
+  item.addEventListener("mouseleave", (e) => {
+    const button = e.target.closest("button");
+    return setAnimation(button, "hoverCircleReverse");
+  });
 });
