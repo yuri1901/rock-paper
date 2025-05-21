@@ -87,13 +87,4 @@
     color: $dark;
     background-color: #fff;
   }
-
-  position: absolute;
-  bottom: calc(0% + 32px);
-  right: calc(0% + 32px);
-
-  @include mediaTablet-rulse {
-    right: 50%;
-    transform: translate(50%, 0);
-  }
 }

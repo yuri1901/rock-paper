@@ -118,15 +118,30 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 64px;
   background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
-  position: relative;
   padding: 20px;
 }
 @media screen and (max-width: 510px) {
   body {
     min-height: 100svh;
     gap: 70px;
+  }
+}
+
+.header {
+  flex: 1 0 0;
+}
+
+.main {
+  flex: 2 0 0;
+}
+
+.footer {
+  align-self: flex-end;
+}
+@media screen and (max-width: 1024px) {
+  .footer {
+    align-self: center;
   }
 }
 
@@ -306,19 +321,10 @@ body {
   letter-spacing: 2.5px;
   text-align: center;
   transition: all 0.8s ease;
-  position: absolute;
-  bottom: calc(0% + 32px);
-  right: calc(0% + 32px);
 }
 .btn__rules-open:hover {
   color: #3b4363;
   background-color: #fff;
-}
-@media screen and (max-width: 1024px) {
-  .btn__rules-open {
-    right: 50%;
-    transform: translate(50%, 0);
-  }
 }
 
 .game {
