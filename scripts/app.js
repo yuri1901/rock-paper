@@ -13,7 +13,9 @@ btnModalClose.addEventListener("click", () => {
 const btnsGameElement = document.querySelectorAll(".game > button");
 
 const setAnimation = (btn, name) => {
-  btn.setAttribute("style", `animation: ${name} 0.5s ease forwards;`);
+  if (btn.classList.contains("game__animation")) {
+    btn.setAttribute("style", `animation: ${name} 0.5s ease forwards;`);
+  }
 };
 
 btnsGameElement.forEach((item) => {
