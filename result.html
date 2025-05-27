@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <article class="score">
+        <a href="#" class="score__logo"> </a>
+        <div class="score__content">
+          <p>score</p>
+          <span>0</span>
+        </div>
+      </article>
+    </header>
+    <main class="main main__result">
+      <article>
+        <p>YOU PICKED</p>
+        <div class="game game__selected game__selected--user">
+          <button class="none">
+            <div></div>
+          </button>
+          <button class="none">
+            <div></div>
+          </button>
+          <button class="none">
+            <div></div>
+          </button>
+        </div>
+        <span class="circle"></span>
+      </article>
+      <article class="result__game" style="display: none !important">
+        <div class="result__game-inner">
+          <strong></strong>
+          <button>PLAY AGAIN</button>
+        </div>
+      </article>
+      <article>
+        <p>THE HOUSE PICKED</p>
+        <div class="game game__selected game__selected--computer">
+          <button class="none">
+            <div></div>
+          </button>
+          <button class="none">
+            <div></div>
+          </button>
+          <button class="none">
+            <div></div>
+          </button>
+        </div>
+        <span class="circle"></span>
+      </article>
+    </main>
+    <footer class="footer">
+      <button class="btn__rules-open">RULES</button>
+      <article class="modalWindow modalClose">
+        <div class="modalWindow__content">
+          <strong>rules</strong>
+          <button class="btn__rules-close">
+            <img src="./images/icon-close.svg" alt="" />
+          </button>
+          <div class="modalWindow__rules">
+            <img src="./images/image-rules.svg" alt="" />
+          </div>
+        </div>
+      </article>
+    </footer>
+    <script type="module" src="./scripts/modal-window.js"></script>
+    <script type="module" src="./scripts/selected-user.js"></script>
+    <script type="module" src="./scripts/selected-computer.js"></script>
+    <script type="module" src="./scripts/game.js"></script>
+    <script type="module" src="./scripts/score.js"></script>
+  </body>
+</html>
